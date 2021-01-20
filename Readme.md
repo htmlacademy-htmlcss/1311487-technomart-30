@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Antonina Telehuz](https://up.htmlacademy.ru/htmlcss/30/user/1311487).
-* Наставник: Ольга Ветер.
+* Наставник: [Ольга Ветер](https://htmlacademy.ru/…199].
 
 ---
 
