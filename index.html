@@ -5,8 +5,264 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
+    <header>
+      <div class="header-top">
+        <img src="#" alt="logo">
+        <form action="search" >
+        <input type="search" name="text" required placeholder="Поиск:">
+        </form>
+        <a href="#">Закладки: 0 </a>
+        <a href="#">Корзина: 0 </a>
+        <a href="#">Оформить заказ</a>
+      </div>
+      <div class="header-center">
+        <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <a href="#">Войти</a>
+        <a href="#">Регистрация</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Компания</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!--Promo-block -->
+      <section>
+        <div>
+          <h3>Материалы</h3>
+          <a href="#">на любой вкус</a>
+          <img src="#" alt="materials">
+          <img src="#" alt="new">
+        </div>
+        <div>
+          <h3>Инструмент</h3>
+          <a href="#">на все случаи</a>
+          <img src="#" alt="tools">
+        </div>
+        <div>
+          <h3>Техника</h3>
+          <a href="#">для стройки</a>
+          <img src="#" alt="technics">
+        </div>
+        <div>
+          <h3>Скидки 50%</h3>
+          <a href="#">На 350 товаров</a>
+          <img src="#" alt="discounts">
+        </div>
+        <div>
+          <div>
+            <h3>Перфораторы</h3>
+            <p>Настоящие мужские игрушки</p>
+            <a href="#">Открыть каталог</a>
+          </div>
+          <div>
+            <h3>Дрели</h3>
+            <p>Соседям на радость!</p>
+            <a href="#">Открыть каталог</a>
+          </div>
+          <button type="button">&#8249;</button>
+          <button type="button">&#8250;</button>
+        </div>
+      </section>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+      <!--Popular goods-->
+      <section>
+        <div>
+          <h2>Популярные товары:</h2>
+          <a href="#">все популярные товары</a>
+        </div>
+        <div class="goods-item">
+          <img src="#" alt="">
+          <p>Перфоратор BOSCH BFG 9000</p>
+          <del>32500 Р.</del>
+          <a href="#">25500 Р.</a>
+        </div>
+        <div class="goods-item">
+          <img src="#" alt="">
+          <p>Перфоратор BOSCH BFG 3000</p>
+          <del>22500 Р.</del>
+          <a href="#">15500 Р.</a>
+        </div>
+        <div class="goods-item">
+          <img src="#" alt="">
+          <p>Перфоратор BOSCH BFG 6000</p>
+          <del>30500 Р.</del>
+          <a href="#">25500 Р.</a>
+        </div>
+        <div class="goods-item">
+          <img src="#" alt="">
+          <p>Перфоратор BOSCH BFG 2000</p>
+          <del>22500 Р.</del>
+          <a href="#">12500 Р.</a>
+        </div>
+      </section>
+
+      <!--Popular manufacturer-->
+      <section>
+        <div>
+          <h2>Популярные производители:</h2>
+          <a href="#">все производители</a>
+        </div>
+        <div class="popular-manufacturer-item">
+          <a href="#">
+            <img src="#" alt="bosch">
+          </a>
+        </div>
+        <div class="popular-manufacturer-item">
+          <a href="#">
+            <img src="#" alt="makita">
+          </a>
+        </div>
+        <div class="popular-manufacturer-item">
+          <a href="#">
+            <img src="#" alt="dewalt">
+          </a>
+        </div>
+        <div class="popular-manufacturer-item">
+          <a href="#">
+            <img src="#" alt="interskol">
+          </a>
+        </div>
+        <div class="popular-manufacturer-item">
+          <a href="#">
+            <img src="#" alt="hitachi">
+          </a>
+        </div>
+        <div class="popular-manufacturer-item">
+          <a href="#">
+            <img src="#" alt="lg">
+          </a>
+        </div>
+        <div class="popular-manufacturer-item">
+          <a href="#">
+            <img src="#" alt="aeg">
+          </a>
+        </div>
+        <div class="popular-manufacturer-item">
+          <a href="#">
+            <img src="#" alt="metabo">
+          </a>
+        </div>
+      </section>
+
+      <!--Services-->
+      <section>
+        <h2>Сервисы</h2>
+        <p>Хороший интернет-магазин отличается от плохого не только ценами!
+        <br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+          
+        <input type="radio" id="delivery" name="services-titel" checked>
+        <input type="radio" id="warranty" name="services-titel">
+        <input type="radio" id="credit" name="services-titel">
+        <div class="services-titel">
+          <label for="delivery">Доставка</label>
+          <label for="warranty">Гарантия</label>
+          <label for="credit">Кредит</label>
+        </div>
+        <div>
+          <h2>Доставка</h2>
+          <p>Мы с удовольствием доставим ваш товар прямо 
+            к вашему подъезду совершенно бесплатно!
+            Ведь мы неплохо заработаем, 
+            поднимая его на ваш этаж!</p>
+            <img src="#" alt="delivery">
+        </div>
+        <div>
+          <h2>Гарантия</h2>
+          <p>Если купленный у нас товар поломается или заискрит,
+            а также в случае пожара, спровоцированного его возгоранием,  вы
+            всегда можете быть уверены в нашей гарантии. Мы обменяем 
+            сгоревший товар на новый. 
+            Дом уж восстановите как-нибудь сами.</p>
+            <img src="#" alt="warranty">
+        </div>
+        <div>
+          <h2>Кредит</h2>
+          <p>Залезть в долговую яму стало проще! 
+            Кредитные консультанты придут вам на помощь.</p>
+            <a href="#">Отправить заявку</a>
+            <img src="#" alt="credit">
+        </div>
+      </section>
+
+      <!--About us-->
+      <section>
+        <h2>Компания «Техномарт»</h2>
+        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для 
+          ремонта и строительства не оставит равнодушными любителей сэкономить на 
+          гастарбайтерах.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России!
+          Техномарт работает со многими транспортными компаниями:</p>
+        <ul>
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <a href="#">Подробнее о компании</a>
+      </section>
+
+      <!--Contacts-->
+      <h2>Контакты</h2>
+      <p>Вы можете забрать товар сами, 
+      заехав в наш офис:</p>
+      <a href="#">
+        <img src="#" alt="map">
+      </a>
+      <a href="#">Заблудились? Напишите нам!</a>
+    </main>
+
+    <footer>
+      <div class="footer-top">
+        <img src="#" alt="logo">
+        <div>
+          <ul>
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          +7 (812) 555-05-55</p>
+          <ul>
+            <li><a href="#">Материалы</a></li>
+            <li><a href="#">Техника</a></li>
+            <li><a href="#">Инструмент</a></li>
+            <li><a href="#">Спецпредложения</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2010–2019 Компания «Техномарт»
+        Все права защищены</p>
+        <ul>
+          <li><a href="#">VK</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+        <div>
+          <p>Обратная связь:</p>
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div>
+          <p>Разработано —</p>
+          <a href="#">htmlacademy.ru</a>
+        </div>
+      </div>
+    </footer>
+
+    
 
   </body>
 </html>
