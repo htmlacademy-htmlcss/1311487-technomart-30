@@ -1,0 +1,114 @@
+body {
+    font-family: 'Cuprum', 'PT Sans', sans-serif;
+}
+.header-top {
+    background-color: #293449;
+}
+.header-logo {
+    width: 220px;
+    height: 47px;
+    background-color: #EE3643;
+}
+.header-top-link {
+    position: relative;
+    text-decoration: none;
+    color:#FFFFFF;
+    font-size: 18px;
+}
+.header-top-search{
+    background-image: url("/img/decorative/search.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.header-top-search input{
+    outline: none;
+    border: none;
+    background-color: #293449;
+    font-size: 18px;
+    margin-left: 20px;
+}
+.header-top-search input::-webkit-input-placeholder { 
+    color: #FFFFFF; 
+}
+.bookmarks{
+    background-image: url("/img/decorative/icon-cart.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.basket{
+    background-image: url("/img/decorative/icon-cart.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.order{
+    background-color: #63A63E;
+}
+.header-content{
+    
+    font-style: italic;
+    font-size: 16px;
+    line-height: 23px;
+    color: #EE3643;
+}
+.phablet{
+    background-image: url("/img/decorative/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
+    text-decoration: none;
+    color: #EE3643;
+    border: 3px solid #FFFFFF;
+}
+.adress{
+    font-size: 14px;
+    line-height: 24px;
+    color: #32425C;
+}
+.header-bottom{
+    background-color:#f1f5f7;
+}
+.btn-link {
+    background-color: #FFFFFF;
+    text-decoration: none;
+    font-size: 21px;
+    line-height: 21px;
+}
+.login {
+    background-image: url("/img/decorative/icon-login.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.user{
+    background: url("/img/decorative/icon-user.svg") no-repeat left,
+    url("/img/decorative/icon-logout.svg") no-repeat right;
+    background-color: #FFFFFF;
+}
+.users-menu{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 18px;
+    color: #32425C;
+}
+.header-nav{
+    background-color: #32425C;
+}
+
+.header-nav li{
+    list-style: none;    
+    display: inline-block;
+}
+.header-nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 24px;
+}
+.location li{
+    list-style: none;
+    display: inline-block;
+}
+.location a{
+    text-decoration: none;
+}
