@@ -1,0 +1,391 @@
+:root { 
+    --basic-top-bottom:#293449;
+    --basic-dark-blue: #32425C;
+    --basic-light-blue: #F1F5F7;
+    --basic-orange:  #FFBF47;
+    --basic-blue: #3BBCE3;
+    --basic-light-purple: #DC91D8;
+    --basic-light-green:#8ED78F;
+    --basic-light-pink: #F9F5F0;
+    --basic-red: #EE3643;
+    --basic-black: #000000;
+    --basic-white: #FFFFFF;
+    --basic-yellow: #FFD180;
+    --basic-green: #63A63E;
+    --basic-light-red: #F7F3EC;
+    --basic-light-black: rgba(255,255,255, 0.3);
+    --basic-gray:#A9A9A9;
+    --basic-bottom: #F3F7F9;
+}
+
+body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    color: var(--basic-white);
+    
+}
+.header-top {
+    background-color:var(--basic-top-bottom)
+}
+.header-logo img {
+    width: 220px;
+    height: 47px;
+}
+.header-top-link {
+    position: relative;
+    text-decoration: none;
+    color:var(--basic-white);
+    font-size: 18px;
+}
+.header-top-search{
+    background-image: url("../img/decorative/search.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.header-top-search input{
+    outline: none;
+    border: none;
+    background-color: var(--basic-top-bottom);
+    font-size: 18px;
+    margin-left: 20px;
+}
+.header-top-search input::-webkit-input-placeholder { 
+    color: var(--basic-white); 
+}
+.bookmarks{
+    background-image: url("../img/decorative/icon-cart.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.basket{
+    background-image: url("../img/decorative/icon-cart.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.order{
+    background-color: var(--basic-green);
+}
+.header-content{
+    
+    font-style: italic;
+    font-size: 16px;
+    line-height: 23px;
+    color: var(--basic-red);
+}
+.phablet{
+    background-image: url("../img/decorative/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
+    text-decoration: none;
+    color: var(--basic-red);
+    border: 3px solid var(--basic-white) ;
+}
+.adress{
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--basic-dark-blue);
+}
+.header-bottom{
+    background-color:var(--basic-light-blue);
+}
+.btn-link {
+    background-color: var(--basic-white);
+    text-decoration: none;
+    font-size: 21px;
+    line-height: 21px;
+}
+.login {
+    background-image: url("../img/decorative/icon-login.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.user{
+    background: url("../img/decorative/icon-user.svg") no-repeat left,
+    url("../img/decorative/icon-logout.svg") no-repeat right;
+    background-color: var(--basic-white);
+}
+
+.users-menu{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-dark-blue);
+}
+.header-nav{
+    background-color: var(--basic-dark-blue);
+}
+
+.header-nav li{
+    list-style: none;    
+    display: inline-block;
+}
+.header-nav a {
+    text-decoration: none;
+    color: var(--basic-white);
+    font-size: 18px;
+    line-height: 24px;
+}
+.location li{
+    font-family: PT Sans;
+    list-style: none;
+    display: inline-block;
+    color: var(--basic-black);
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 18px;
+    
+}
+.location a{
+    text-decoration: none;
+    color: var(--basic-black);
+    background-image:  url("../img/decorative/icon-right-small.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+h2{
+    font-family: Cuprum;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+
+}
+.materials{
+    background-color: var(--basic-orange);
+    background-image: url("../img/decorative/icon-1.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.promo-link{
+    font-family: Cuprum;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+    background:var(--basic-light-black);
+    text-decoration: none;
+}
+.tool{
+    background-color: var(--basic-blue);
+    background-image: url("../img/decorative/icon-2.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.technics{
+    background-color: var(--basic-light-purple);
+    background-image: url("../img/decorative/icon-3.svg");
+    background-repeat: no-repeat;
+    background-position: right;  
+}
+.discount{
+    background-color: var(--basic-light-green);
+    background-image: url("../img/decorative/icon-4.svg");
+    background-repeat: no-repeat;
+    background-position: right;   
+}
+.delivery{
+    background-color: var(--basic-orange);
+    background-image: url("../img/decorative/icon-5.svg");
+    background-repeat: no-repeat;
+    background-position: right;   
+}
+.slide-perforator{
+    background-image: url("../img/perforator_slide.png");
+    background-repeat: no-repeat;
+}
+.slide-drill{
+    background-image: url("../img/drill_slide.png");
+    background-repeat: no-repeat;
+}
+.promo-title{
+    font-family: Cuprum;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--basic-white);
+    font-weight: bold;
+}
+.slides-title{
+    font-family: Cuprum;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+
+}
+.slides-content{
+    font-family: Cuprum;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basic-white);
+}
+.slides-section a{
+    text-decoration: none;
+    font-family: Cuprum;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+    background-color:var(--basic-red);
+}
+.slides-section{
+    background-image: url("../img/decorative/shape_1.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    
+}
+.slides-section-shape{
+    background-image: url("../img/decorative/shape_2.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.popular-title{
+    background-color: var(--basic-light-pink);
+}
+.link-btn{
+    text-decoration: none;
+    font-family: Cuprum;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+}
+.goods-title{
+    font-family: PT Sans;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--basic-black);
+}
+del{
+    font-family: PT Sans;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-gray);
+}
+.goods-price{
+    font-family: PT Sans;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    text-transform: uppercase;  
+    color: var(--basic-white);
+    background:linear-gradient(135deg, transparent 110px, var(--basic-white) 0),
+    linear-gradient(45deg, transparent 110px, var(--basic-white) 0);
+    background-repeat: no-repeat;
+    background-color: var(--basic-red);
+    border-radius: 3px;
+    height: 38px;
+    width: 141px;
+}
+.buy{
+    background-color: var(--basic-green);
+    text-decoration: none;
+    background-image: url("../img/decorative/icon-cart.svg");
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 98px;
+    font-family: Cuprum;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+}
+.bookmarks{
+    text-decoration: none;
+    font-family: Cuprum;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-dark-blue);
+    background-color: var(--basic-white);
+    border: 3px solid var(--basic-green);
+}
+.services{
+    background-color: var(--basic-light-blue);
+}
+.service-delivery{
+    background-image: url("../img/decorative/delivery.svg");
+    background-repeat: no-repeat;
+}
+.service-warranty{
+    background-image: url("../img/decorative/warranty.svg");
+    background-repeat: no-repeat; 
+}
+.service-credit{
+    background-image: url("../img/decorative/credit.svg");
+    background-repeat: no-repeat; 
+}
+.content {
+    font-family: PT Sans;
+    font-size: 13px;
+    line-height: 24px;
+    color: var(--basic-black);
+}
+.about-us-list li{
+    list-style-type: none;
+    background: url("../img/decorative/icon_about_us.svg") no-repeat left;
+    font-family: Cuprum;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basic-black);
+}
+.footer-top{
+    background-color: var(--basic-dark-blue);
+
+}
+.footer-nav li,
+.footer-promo-nav li,
+.social-list li{
+    list-style-type: none;
+    display: inline-block;
+}
+.footer-nav a{
+    text-decoration: none;
+    font-family: Cuprum;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basic-light-blue);
+}
+.footer-promo-nav p{
+    font-family: Cuprum;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basic-bottom);
+}
+.footer-promo-nav a{
+    text-decoration: none;
+    font-family: Cuprum;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basic-yellow);
+
+}
+.footer-bottom{
+    background-color: var(--basic-top-bottom);
+
+}
+.footer-bottom p{
+    font-family: Cuprum;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-white);
+}
+.footer-bottom a {
+    text-decoration: none;
+    font-family: Cuprum;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-yellow);
+}
