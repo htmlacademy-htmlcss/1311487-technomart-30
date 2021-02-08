@@ -39,7 +39,6 @@
 .container {
     width: 940px;
     margin: 0 auto;
-    padding: 0 10px;
   }
 .header-top {
     background-color:var(--basic-top-bottom);
@@ -289,6 +288,7 @@ h2{
 .popular-title{
     background-color: var(--basic-light-pink);
 }
+
 .link-btn{
     text-decoration: none;
     font-family: Cuprum;
@@ -309,12 +309,19 @@ h2{
 .goods-item{
     width:220px;
     height: 318px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr min-content min-content min-content;
+    text-align: center;
+    align-items: center;
+}
+.goods-item img{
+    margin: auto;
 }
 del{
     font-family: PT Sans;
     font-weight: bold;
     font-size: 17px;
-    line-height: 18px;
     text-transform: uppercase;
     color: var(--basic-gray);
 }
@@ -322,7 +329,6 @@ del{
     font-family: PT Sans;
     font-weight: bold;
     font-size: 17px;
-    line-height: 18px;
     text-transform: uppercase;  
     color: var(--basic-white);
     background:linear-gradient(135deg, transparent 110px, var(--basic-white) 0),
@@ -332,6 +338,10 @@ del{
     border-radius: 3px;
     height: 38px;
     width: 141px;
+    margin: 13px auto;
+    
+    }
+
 }
 .buy{
     background-color: var(--basic-green);
@@ -358,12 +368,19 @@ del{
 }
 .manufacturers-logo {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(2, 145px);
-    grid-row-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:repeat(2,145px);
     grid-column-gap: 20px;
-
+    grid-row-gap: 20px;
 }
+
+.popular-manufacturer-item{
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
 .services{
     background-color: var(--basic-light-blue);
 }
