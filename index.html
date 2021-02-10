@@ -17,14 +17,14 @@
   <body class="page-body">
     <header>
       <div class="header-top">
-        <div class="container">
+        <div class="container header-top-menu">
           <div class="header-logo ">
-            <img src="img/logo.svg" width="220" height="47" alt="Логотип Техномарт">
+            <img src="img/logo_top.svg" width="107" height="17" alt="Логотип Техномарт">
           </div>
           <form class="header-top-search" action="search" action="http://echo.htmlacademy.ru">
             <input type="search" name="text" required placeholder="Поиск:">
           </form>
-          <a class="header-top-link bookmarks" href="#">Закладки: 0 </a>
+          <a class="header-top-link bookmarks-top" href="#">Закладки: 0 </a>
           <a class="header-top-link basket" href="#">Корзина: 0 </a>
           <a class="header-top-link order" href="#">Оформить заказ</a>
         </div>
@@ -231,38 +231,38 @@
       </section>
 
       <!--About us-->
-      <section class="about-us">
-        <div class="container">
+      <div class="container main-bottom">
+        <section class="about-us">
           <h2>Компания «Техномарт»</h2>
           <p class="content">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для 
-            ремонта и строительства не оставит равнодушными любителей сэкономить на 
-            гастарбайтерах.</p>
+              ремонта и строительства не оставит равнодушными любителей сэкономить на 
+              гастарбайтерах.</p>
           <p class="content">Мы можем доставить ваш товар в самые отдаленные точки России!
-            Техномарт работает со многими транспортными компаниями:</p>
+              Техномарт работает со многими транспортными компаниями:</p>
           <ul class="about-us-list">
             <li>Деловые линии</li>
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a class="link-btn" href="#">Подробнее о компании</a>
-        </div>
-      </section>
+          <a class="link-btn about-us-btn" href="#">Подробнее о компании</a>
+        </section>
 
-      <!--Contacts-->
-      <div class="container">
-        <h2>Контакты</h2>
-        <p class="content">Вы можете забрать товар сами, 
-        заехав в наш офис:</p>
-        <a href="#">
-          <img src="img/map.jpg" width="300" height="158" alt="map">
-        </a>
-        <a class="link-btn" href="#">Заблудились? Напишите нам!</a>
+        <!--Contacts-->
+        <div class="contacts ">
+          <h2>Контакты</h2>
+          <p class="content">Вы можете забрать товар сами, 
+          заехав в наш офис:</p>
+          <a class="map" href="#">
+            <img src="img/map.jpg" width="300" height="158" alt="map">
+          </a>
+          <a class="link-btn contacts-btn" href="#">Заблудились? Напишите нам!</a>
+        </div>
       </div>
     </main>
 
     <footer>
       <div class="footer-top">
-        <div class="container">
+        <div class="container footer-top-block">
           <img src="img/logo.svg" width="220" height="68" alt="logo">
           <ul class="footer-nav">
             <li><a href="#">Компания</a></li>
@@ -271,10 +271,9 @@
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
-          <div class="footer-promo-nav">
-            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-            +7 (812) 555-05-55</p>
-            <ul>
+          <div class="footer-promo">
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
+            <ul class="footer-promo-nav">
               <li><a href="#">Материалы</a></li>
               <li><a href="#">Техника</a></li>
               <li><a href="#">Инструмент</a></li>
