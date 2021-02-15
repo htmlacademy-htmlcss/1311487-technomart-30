@@ -619,3 +619,25 @@ del{
 .feedback{
     margin-right: 51px;
 }
+.catalog-page {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    align-content: start;
+
+}
+.catalog-title {
+    margin: 0;
+    grid-column: 1 / -1;
+    background-color: var(--basic-light-blue);
+}
+.location {
+    grid-column: 1 / -1;
+    margin-bottom: 21px;
+}
+.catalog {
+    margin-left: 20px;
+
+}
+.catalog-content {
+    background-color: var(--basic-light-blue);
+}
