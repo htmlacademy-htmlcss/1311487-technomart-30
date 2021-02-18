@@ -16,6 +16,7 @@
     --basic-light-black: rgba(255,255,255, 0.3);
     --basic-gray:#A9A9A9;
     --basic-bottom: #F3F7F9;
+    --basic-light-gray: #e5e5e5
 }
 
 .page {
@@ -176,17 +177,45 @@
     text-align: center;
     padding: 12px 0;
 }
+.user::before{
+    content: "";
+    width: 20px;
+    display: flex;
+    background: url("../img/decorative/icon-user.svg") no-repeat center ;
+    margin-right: 21px;
+}
+.user::after{
+    content: "";
+    width: 20px;
+    display: flex;
+    background: url("../img/decorative/icon-logout.svg") no-repeat center;
+}
 .user{
-    background: url("../img/decorative/icon-user.svg") no-repeat left,
-    url("../img/decorative/icon-logout.svg") no-repeat right;
+    display: flex;
     background-color: var(--basic-white);
+    width: 299px;
+    height: 45px;
+    justify-content: center;
+    text-align: center;
+
+}
+.header-bottom-catalog{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
-.users-menu{
+.users-menu a{
     text-decoration: none;
     font-size: 16px;
     line-height: 18px;
     color: var(--basic-dark-blue);
+}
+.users-menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
 }
 .header-nav{
     background-color: var(--basic-dark-blue);
@@ -640,4 +669,45 @@ del{
 }
 .catalog-content {
     background-color: var(--basic-light-blue);
+}
+.catalog-goods {
+    display: grid;
+    grid-template-columns: repeat(3, 220px);
+    grid-template-rows:repeat(3,318px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    margin-bottom: 48px;
+}
+.sorting a{
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--basic-black);
+    opacity: 0.3;
+}
+
+.filter{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--basic-black);  
+    background-color: var(--basic-light-red);
+}
+.sorting{
+    background-color: var(--basic-light-red);
+    max-width: 700px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.pages{
+    display: inline-block;
+}
+.pages a{
+    text-decoration: none;
+    color: var(--basic-black);
+    padding: 10px 15px;
+    border: 1px solid var(--basic-light-gray);
+    border-radius: 2px;
+    grid-column: -4/-2;
 }
