@@ -208,22 +208,20 @@
           <p class="content">Хороший интернет-магазин отличается от плохого не только ценами!
           <br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
             
-          <input type="radio" id="delivery" name="services-titel" checked>
-          <input type="radio" id="warranty" name="services-titel">
-          <input type="radio" id="credit" name="services-titel">
+        
           <div class="services-title">
-            <label for="delivery">Доставка</label>
-            <label for="warranty">Гарантия</label>
-            <label for="credit">Кредит</label>
+            <button class="tablinks" onclick="servisTitle(event, 'delivery')">Доставка</button>
+            <button class="tablinks" onclick="servisTitle(event, 'warranty')">Гарантия</button>
+            <button class="tablinks" onclick="servisTitle(event, 'credit')">Кредит</button>
           </div>
-          <div class="service-delivery">
+          <div class="service-delivery tabcontent" id="delivery">
             <h2>Доставка</h2>
             <p class="content" >Мы с удовольствием доставим ваш товар прямо 
               к вашему подъезду совершенно бесплатно!
               Ведь мы неплохо заработаем, 
               поднимая его на ваш этаж!</p>
           </div>
-          <div class="service-warranty">
+          <div class="service-warranty tabcontent" id="warranty">
             <h2>Гарантия</h2>
             <p class="content">Если купленный у нас товар поломается или заискрит,
               а также в случае пожара, спровоцированного его возгоранием,  вы
@@ -231,7 +229,7 @@
               сгоревший товар на новый. 
               Дом уж восстановите как-нибудь сами.</p>
           </div>
-          <div class="service-credit">
+          <div class="service-credit tabcontent" id="credit">
             <h2>Кредит</h2>
             <p class="content">Залезть в долговую яму стало проще! 
               Кредитные консультанты придут вам на помощь.</p>

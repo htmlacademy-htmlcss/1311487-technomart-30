@@ -15,8 +15,10 @@
     --basic-light-red: #F7F3EC;
     --basic-light-black: rgba(255,255,255, 0.3);
     --basic-gray:#A9A9A9;
+    --basic-toggle-gray: #ABABAB;
     --basic-bottom: #F3F7F9;
-    --basic-light-gray: #e5e5e5
+    --basic-light-gray: #e5e5e5;
+    --basic-dark-gray:#444444; 
 }
 
 .page{
@@ -546,6 +548,49 @@ del{
     align-items: center;
     justify-content: center
 }
+/* Style the tab */
+.services-title{
+    float: left;
+    color: var(--basic-white);
+    background-color: var(--basic-dark-blue);
+    width: 240px;
+    height: 183px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.services-title button {
+    display: block;
+    color: var(--basic-white);
+    background-color: var(--basic-dark-blue);
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 1px 0px var(--basic-top-bottom), inset 0px 1px 0px #405069;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 300px;
+}
 
 .services{
     background-color: var(--basic-light-blue);
@@ -777,6 +822,73 @@ del{
     color: var(--basic-black);  
     background-color: var(--basic-light-red);
 }
+.range-controls{
+    position: relative;
+    background-color: var(--basic-light-red);
+    height: 41px;
+    border-radius: 5px;
+    margin-bottom: 9px;
+    padding-top: 39px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.range-controls .scale{
+    height: 2px;
+    background: #d7dcde;
+  }
+.range-controls .bar{
+    width: 152px;
+    height: 2px;
+    background: #00ca74;
+  }
+.range-controls .toggle {
+    width: 4px;
+    height: 4px;
+    padding: 0;
+    border: 8px solid var(--basic-white);
+    background-color: var(--basic-toggle-gray);
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 var(--basic-toggle-gray);
+    position: absolute;
+    top: 31px;
+    left: 0;
+    cursor: pointer;
+  }
+.range-controls .toggle-min{
+    left: 18px;
+  }
+  
+.range-controls .toggle-max{
+    left: 160px;
+  }
+.price-controls{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.price-controls span{
+    text-transform: uppercase;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 16px;
+    color: var(--basic-dark-gray);  
+
+}
+.price-controls input {
+    text-transform: uppercase;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 17px;
+    width: 95px;
+    padding: 0;
+    text-align: center;
+    color:var(--basic-black);
+    border: none;
+    border-radius: 5px;
+    background: var(--basic-light-red);
+    height: 38px;
+  }
+  
 .sorting{
     background-color: var(--basic-light-red);
     max-width: 700px;
@@ -784,6 +896,17 @@ del{
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+}
+fieldset{
+    border:none;
+    padding: 0;
+    margin: 0;
+}
+fieldset ul{
+    padding: 0;
+}
+ul li{
+    list-style-type: none;
 }
 .pages{
     display: inline-block;
