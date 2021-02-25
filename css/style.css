@@ -20,6 +20,7 @@
     --basic-light-gray: #e5e5e5;
     --basic-dark-gray:#444444; 
     --basic-checkbox-gray:#C5C5C5;
+    --basic-border-logo: #b52933;
 }
 
 .page{
@@ -50,20 +51,22 @@
 .header-logo{
     background-color: var(--basic-red);
     width: 220px;
-    height: 47px;
+    height: 42px;
+    border-bottom: 5px solid var(--basic-border-logo);
+    margin-right: 17px;
 }
 .header-logo img{
     margin: 0;
-    width: 117px;
-    height: 17px;
-
-
+    width: 108px;
+    height: 18px;
+    padding: 12px 56px;
 }
 .header-top-menu{
+    font-family: "Cuprum", "Arial", sans-serif;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    
+    height: 42px;
 }
 .header-top-link{
     position: relative;
@@ -72,6 +75,7 @@
     font-size: 18px;
     width: 150px;
     text-align: center;
+    padding: 9px 16px;
     
 }
 .header-top-search::before{
@@ -79,6 +83,7 @@
     width: 17px;
     background:url("../img/decorative/search.svg") no-repeat center;
     opacity: 0.3;
+    margin-right: 6px;
 }
 .header-top-search{
     display: flex;
@@ -95,31 +100,42 @@
 .header-top-search input::-webkit-input-placeholder{ 
     color: var(--basic-white); 
 }
-.bookmarks-top{
-    background-image: url("../img/decorative/icon-bookmark.svg");
-    background-repeat: no-repeat;
-    background-position: left;
+.bookmarks-top::before{
+    content: "";
+    width: 14px;
+    background: url("../img/decorative/icon-bookmark.svg") no-repeat left;
+    opacity: 0.3;
+    margin-right: 9px;
 }
+.bookmarks-top,
 .basket{
-    background-image: url("../img/decorative/icon-cart.svg");
-    background-repeat: no-repeat;
-    background-position: left;
+    display: flex;
 }
+.basket::before{
+    content: "";
+    width: 15px;
+    background: url("../img/decorative/icon-cart.svg") no-repeat left;
+    opacity: 0.3;
+    margin-right: 8px;
+}
+
 .order{
     background-color: var(--basic-green);
 }
 .header-content{
+    margin: 0;
     font-style: italic;
     font-size: 16px;
     line-height: 23px;
     color: var(--basic-red);
     width: 197px;
+    padding-left: 30px;
+    margin-right: 93px;
 }
 .header-bottom-contacts{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    
 }
 .phablet::before{
     content: "";
@@ -134,13 +150,18 @@
     flex-wrap: nowrap;
     font-weight: bold;
     font-size: 21px;
-    line-height: 30px;
     text-decoration: none;
     color: var(--basic-red);
     border: 3px solid var(--basic-white) ;
     width: 270px;
     padding: 7px 0 8px 0;
     justify-content: center;
+}
+.contacts-home{
+    margin-right: 69px;
+}
+.contacts-catalog{
+    margin-right: 51px;
 }
 .adress{
     display: flex;
@@ -153,18 +174,22 @@
 }
 .header-bottom{
     background-color:var(--basic-light-blue);
+    padding-top: 46px;
+    padding-bottom: 60px;
+
 }
 .header-bottom-about{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
 }
 .header-bottom-btn{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: center;
+    align-items: flex-start;
 }
 .btn-link{
     background-color: var(--basic-white);
@@ -196,18 +221,7 @@
     text-align: center;
     padding: 12px 0;
 }
-.user::before{
-    content: "";
-    width: 20px;
-    background: url("../img/decorative/icon-user.svg") no-repeat center ;
-    margin-right: 21px;
-}
-.user::after{
-    content: "";
-    width: 20px;
-    background: url("../img/decorative/icon-logout.svg") no-repeat center;
-}
-.user{
+.user-buttom{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -215,8 +229,21 @@
     width: 299px;
     height: 45px;
     justify-content: center;
-    text-align: center;
-
+    margin-bottom: 7px;
+}
+.user-page{
+    width: 20px;
+    background: url("../img/decorative/icon-user.svg") no-repeat center;
+    margin-right: 21px;
+}
+.user-logout{
+    width: 20px;
+    background: url("../img/decorative/icon-logout.svg") no-repeat center;
+}
+.user{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-right: 20px;
 }
 .header-bottom-catalog{
     display: flex;
@@ -234,10 +261,13 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-
+    justify-content: space-between;
+    width: 210px;
+    padding-left: 45px;
 }
 .header-nav{
     background-color: var(--basic-dark-blue);
+    border-bottom: 5px solid var(--basic-top-bottom);
     
 }
 .header-nav ul{
@@ -246,8 +276,9 @@
     flex-wrap: nowrap;
     justify-content: center;
     padding: 0;
-    height: 60px;
+    height: 55px;
     align-items: center;
+    margin: 0;
 }
 
 .header-nav li{
