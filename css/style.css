@@ -328,25 +328,44 @@ h2{
 
 }
 .materials{
-    background-color: var(--basic-orange);
-    background-image: url("../img/decorative/icon-1.svg");
-    background-repeat: no-repeat;
-    background-position: right;
+    position: relative;
+    background:var(--basic-orange) url("../img/decorative/icon-1.svg") no-repeat 83% 53%;
+    padding-top: 20px;
+    padding-left: 23px;
+    padding-bottom: 21px;
+    
+}
+.materials::after{
+    content: "";
+    background: url(../img/decorative/new.svg) no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 70px;
+    height: 70px;
+    
+
 }
 .promo-link{
+    display:  table-cell;
     font-family: "Cuprum","Arial", sans-serif;
     font-size: 14px;
-    line-height: 18px;
     text-transform: uppercase;
     color: var(--basic-white);
+    width: 135px;
     background:var(--basic-light-black);
     text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    align-items: center;
+    height: 18px;
+    vertical-align: middle;
+    
 }
 .tool{
-    background-color: var(--basic-blue);
-    background-image: url("../img/decorative/icon-2.svg");
-    background-repeat: no-repeat;
-    background-position: right;
+     background: var(--basic-blue) url("../img/decorative/icon-2.svg") no-repeat;
+
 }
 .technics{
     background-color: var(--basic-light-purple);
@@ -371,9 +390,10 @@ h2{
 .promo-title{
     font-family: "Cuprum","Arial", sans-serif;
     font-size: 24px;
-    line-height: 30px;
     color: var(--basic-white);
     font-weight: bold;
+    margin: 0px;
+    margin-bottom: 14px;
 }
 
 .slides-title{
@@ -386,10 +406,11 @@ h2{
     text-transform: uppercase;
     color: var(--basic-white);
     top:23px;
-    padding-left: 24px;
+    left: 24px;
 }
 .mySlides{
     display: none;
+    position: relative;
 }
 .fade {
     -webkit-animation-name: fade;
@@ -446,16 +467,16 @@ h2{
     text-transform: uppercase;
     color: var(--basic-white);
     background-color:var(--basic-red);
-    left:24px;
+    left: 24px;
     bottom: -95%;
     padding: 11px 46px 9px 46px;
 }
 .slides-section{
+    position: relative;
     grid-column: 1 / 3;
     grid-row: 2/ 3;
     grid-row-gap: 0;
     max-width: 620px;
-    position: relative;
     background-color: var(--basic-white);
 }
 .prev, .next {
