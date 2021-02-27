@@ -27,7 +27,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-function servisTitle(evt, cityName) {
+function servisTitle(evt, servisName) {
     // Declare all variables
     var i, tabcontent, tablinks;
 
@@ -44,6 +44,6 @@ function servisTitle(evt, cityName) {
     }
 
     // Show the current tab, and add an "active" class to the link that opened the tab
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(servisName).style.display = "block";
     evt.currentTarget.className += " active";
 }
