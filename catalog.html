@@ -42,22 +42,20 @@
             </div>
             <div class="users-menu">
               <a href="#">Мои заказы</a>
-              &bull;
+              <span> &bull;</span>
               <a href="#">Личный кабинет</a>
             </div>
           </div>
         </div>
-          <nav class="header-nav container">
-            <ul>
-              <li><a href="index.html">Главная</a></li>
-              <li><a href="index.html">Компания</a></li>
-              <li><a href="index.html">Каталог</a></li>
-              <li><a href="index.html">Новости</a></li>
-              <li><a href="index.html">Спецпредложения</a></li>
-              <li><a href="index.html">Доставка</a></li>
-              <li><a href="index.html">Контакты</a></li>
-            </ul>
-          </nav>
+        <nav class="header-nav container">
+          <a href="#">Главная</a>
+          <a href="#">Компания</a>
+          <a href="#">Каталог</a>
+          <a href="#">Новости</a>
+          <a href="#">Спецпредложения</a>
+          <a href="#">Доставка</a>
+          <a href="#">Контакты</a>
+        </nav>
       </div>
     </header>
     <main >
@@ -141,91 +139,111 @@
 
       <section class="catalog container">
         <div class="sorting">
-          <span>СОРТИРОВКА:</span>
-          <a href="#by-price">по цене</a>
-          <a href="#by-type">по типу</a>  
-          <a href="#by-function">по функционалу</a>
-            <!--сортировка с верху вниз и с низу в верх-->
-          <a href="#"></a>
-          <a href="#"></a>
+          <span>сортировка:</span>
+          <div class="sorting-section" >
+            <a class="sorting-link checked" href="#by-price" >по цене</a>
+            <a class="sorting-link" href="#by-type">по типу</a>  
+            <a class="sorting-link" href="#by-function">по функционалу</a>
+          </div>
+          <!--сортировка с верху вниз и с низу в верх-->
+          <a class="sorting-up checked" href="#">	&#9650;</a>
+          <a class="sorting-down" href="#">&#9660;</a>
         </div>
         <div class="catalog-goods">
           <div class="goods-item">
+            <div class="hidden-buttons">
+              <a class="buy" href="#buy">Купить</a>
+              <a class="bookmarks" href="#bookmarks">В закладки</a>
+            </div>
             <img src="img/drill_2_1.jpg" width="144" height="128" alt="perforator">
             <p class="goods-title">Перфоратор BOSCH BFG 6000</p>
             <s>30500 Р.</s>
             <p class="goods-price">25500 Р.</p>
-            <!--<a class="buy" href="#buy">Купить</a>
-            <a class="bookmarks" href="#bookmarks">В закладки</a>-->
           </div>
           <div class="goods-item">
+            <div class="hidden-buttons">
+              <a class="buy" href="#buy">Купить</a>
+              <a class="bookmarks" href="#bookmarks">В закладки</a>
+            </div>
             <img src="img/drill_2_2.jpg" width="144" height="128" alt="perforator">
             <p class="goods-title">Перфоратор BOSCH BFG 6000</p>
             <s>30500 Р.</s>
             <p class="goods-price">25500 Р.</p>
-            <!--<a class="buy" href="#buy">Купить</a>
-            <a class="bookmarks" href="#bookmarks">В закладки</a>-->
           </div>
-          <div class="goods-item">
+          <div class="goods-item new">
+            <div class="hidden-buttons">
+              <a class="buy" href="#buy">Купить</a>
+              <a class="bookmarks" href="#bookmarks">В закладки</a>
+            </div>
             <img src="img/drill_2_3.jpg" width="144" height="128" alt="perforator">
             <p class="goods-title">Перфоратор BOSCH BFG 6000</p>
             <s>30500 Р.</s>
             <p class="goods-price">25500 Р.</p>
-            <!--<a class="buy" href="#buy">Купить</a>
-            <a class="bookmarks" href="#bookmarks">В закладки</a>-->
           </div>
-          <div class="goods-item">
+          <div class="goods-item new">
+            <div class="hidden-buttons">
+              <a class="buy" href="#buy">Купить</a>
+              <a class="bookmarks" href="#bookmarks">В закладки</a>
+            </div>
             <img src="img/drill_2_4.jpg" width="127" height="112" alt="perforator">
             <p class="goods-title">Перфоратор BOSCH BFG 3000</p>
             <s>22500 Р.</s>
             <p class="goods-price">15500 Р.</p>
-            <!--<a class="buy" href="#buy">Купить</a>
-            <a class="bookmarks" href="#bookmarks">В закладки</a>-->
           </div>
           <div class="goods-item">
+            <div class="hidden-buttons">
+              <a class="buy" href="#buy">Купить</a>
+              <a class="bookmarks" href="#bookmarks">В закладки</a>
+            </div>
             <img src="img/drill_2_5.jpg" width="144" height="128" alt="perforator">
             <p class="goods-title">Перфоратор BOSCH BFG 6000</p>
             <s>30500 Р.</s>
             <p class="goods-price">25500 Р.</p>
-            <!--<a class="buy" href="#buy">Купить</a>
-            <a class="bookmarks" href="#bookmarks">В закладки</a>-->
           </div>
-          <div class="goods-item">
+          <div class="goods-item new">
+            <div class="hidden-buttons">
+              <a class="buy" href="#buy">Купить</a>
+              <a class="bookmarks" href="#bookmarks">В закладки</a>
+            </div>
             <img src="img/drill_2_6.jpg" width="127" height="112" alt="perforator">
             <p class="goods-title">Перфоратор BOSCH BFG 2000</p>
             <p class="goods-price">12500 Р.</p>
-            <!--<a class="buy" href="#buy">Купить</a>
-            <a class="bookmarks" href="#bookmarks">В закладки</a>-->
           </div>
-          <div class="goods-item">
+          <div class="goods-item new">
+            <div class="hidden-buttons">
+              <a class="buy" href="#buy">Купить</a>
+              <a class="bookmarks" href="#bookmarks">В закладки</a>
+            </div>
             <img src="img/drill_2_7.jpg" width="127" height="112" alt="perforator">
             <p class="goods-title">Перфоратор BOSCH BFG 3000</p>
             <s>22500 Р.</s>
             <p class="goods-price">15500 Р.</p>
-            <!--<a class="buy" href="#buy">Купить</a>
-            <a class="bookmarks" href="#bookmarks">В закладки</a>-->
           </div>
           <div class="goods-item">
+            <div class="hidden-buttons">
+              <a class="buy" href="#buy">Купить</a>
+              <a class="bookmarks" href="#bookmarks">В закладки</a>
+            </div>
             <img src="img/drill_2_8.jpg" width="144" height="128" alt="perforator">
             <p class="goods-title">Перфоратор BOSCH BFG 6000</p>
             <s>30500 Р.</s>
             <p class="goods-price">25500 Р.</p>
-            <!--<a class="buy" href="#buy">Купить</a>
-            <a class="bookmarks" href="#bookmarks">В закладки</a>-->
           </div>
-          <div class="goods-item">
+          <div class="goods-item new">
+            <div class="hidden-buttons">
+              <a class="buy" href="#buy">Купить</a>
+              <a class="bookmarks" href="#bookmarks">В закладки</a>
+            </div>
             <img src="img/drill_2_9.jpg" width="127" height="112" alt="perforator">
             <p class="goods-title">Перфоратор BOSCH BFG 2000</p>
             <p class="goods-price">12500 Р.</p>
-            <!--<a class="buy" href="#buy">Купить</a>
-            <a class="bookmarks" href="#bookmarks">В закладки</a>-->
           </div>
         </div>
           <div class="pages">
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">Следующая</a>
+            <a class="pages-numbers checked" href="#">1</a>
+            <a class="pages-numbers" href="#">2</a>
+            <a class="pages-numbers" href="#">3</a>
+            <a class="page-next" href="#">Следующая</a>
           </div>
       </section>
       </section>
@@ -234,8 +252,8 @@
           <h2>Пара слов о перфораторах</h2>
           <p class="content">
             Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
-  Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. 
-  В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+  <br> Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. 
+  <br> В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
           </p>
         </div>
       </section>
@@ -266,18 +284,18 @@
         <div class="container footer-bottom-container">
           <p class="copyright">© 2010–2019 Компания «Техномарт»
           Все права защищены</p>
-          <ul class="social-list">
-            <li><a class="vk" href="#">vk</a></li>
-            <li><a class="facebook" href="#">Facebook</a></li>
-            <li><a class="instagram" href="#">Instagram</a></li>
-          </ul>
+          <div class="social-list">
+            <a class="vk" href="#">vk</a>
+            <a class="facebook" href="#">fb</a>
+            <a class="instagram" href="#">ing</a>
+          </div>
           <div class="feedback">
             <p>Обратная связь:</p>
-            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <a class="footer-bottom-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </div>
           <div>
             <p>Разработано —</p>
-            <a href="#">htmlacademy.ru</a>
+            <a class="footer-bottom-link" href="#">htmlacademy.ru</a>
           </div>
         </div>
       </div>
