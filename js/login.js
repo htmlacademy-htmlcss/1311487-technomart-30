@@ -16,8 +16,8 @@ try {
 
 contactsBtn.addEventListener("click", function (evt) {
   evt.preventDefault();
-  loginPopup.classList.add("modal-show");
-  loginLogin.focus();
+  massagePopup.classList.add("modal-show");
+  massageEmail.focus();
 
 if (storage) {
     massageEmail.value = storage;
