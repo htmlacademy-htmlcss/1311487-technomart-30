@@ -1547,7 +1547,7 @@ ul li{
 .appointment-form p{
     position: relative;
 }
-.massage-item{
+.message-item{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -1559,7 +1559,7 @@ ul li{
     margin:0;
     margin-bottom: 11px;
 }
-.massage-item input{
+.message-item input{
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     width: 218px;
@@ -1568,7 +1568,7 @@ ul li{
     padding: 0;
     border-radius: 2px;
 }
-.massage-textarea textarea{
+.message-textarea textarea{
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     width: 458px;
@@ -1577,7 +1577,7 @@ ul li{
     resize: none;
     border-radius: 2px;
 }
-.massage-textarea{
+.message-textarea{
     margin: 0;
     margin-bottom: 37px;
 }
@@ -1623,7 +1623,7 @@ ul li{
     left: 0;
     margin: auto;
 }
-.modal-massage{
+.modal-message{
     display: none;
     border-top: 7px solid var(--basic-red);
     background-color: var(--basic-white);
