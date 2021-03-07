@@ -20,7 +20,7 @@
       <div class="header-top">
         <div class="container header-top-menu">
           <a class="header-logo"><img src="img/logo_top.svg" width="108" height="18" alt="Логотип Техномарт"></a>
-          <form class="header-top-search" action="search" action="http://echo.htmlacademy.ru">
+          <form class="header-top-search"  action="http://echo.htmlacademy.ru">
             <input type="search" name="text" required placeholder="Поиск:">
           </form>
           <a class="header-top-link bookmarks-top" href="#">Закладки: 0 </a>
@@ -41,13 +41,13 @@
           </div>
         </div>
         <nav class="header-nav container">
-          <a href="#">Главная</a>
-          <a href="#">Компания</a>
-          <a href="#">Каталог</a>
-          <a href="#">Новости</a>
-          <a href="#">Спецпредложения</a>
-          <a href="#">Доставка</a>
-          <a href="#">Контакты</a>
+          <a href="index.html">Главная</a>
+          <a href="index.html">Компания</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="index.html">Новости</a>
+          <a href="catalog.html">Спецпредложения</a>
+          <a href="index.html">Доставка</a>
+          <a href="index.html">Контакты</a>
         </nav>
       </div>
     </header>
@@ -56,23 +56,23 @@
       <section class="promo-section container">
         <div class="promo-block materials new">
           <h3 class="promo-title">Материалы</h3>
-          <a class="promo-link" href="#">на любой вкус</a>
+          <a class="promo-link" href="catalog.html">на любой вкус</a>
         </div>
         <div class="promo-block tool">
           <h3 class="promo-title">Инструмент</h3>
-          <a class="promo-link" href="#">на все случаи</a>
+          <a class="promo-link" href="catalog.html">на все случаи</a>
         </div>
         <div class="promo-block technics">
           <h3 class="promo-title">Техника</h3>
-          <a class="promo-link" href="#">для стройки</a>
+          <a class="promo-link" href="catalog.html">для стройки</a>
         </div>
         <div class="promo-block discount">
           <h3 class="promo-title">Скидки 50%</h3>
-          <a class="promo-link" href="#">На 350 товаров</a>
+          <a class="promo-link" href="catalog.html">На 350 товаров</a>
         </div>
         <div class="promo-block delivery">
           <h3 class="promo-title">Доставка</h3>
-          <a class="promo-link" href="#">Бесплатно</a>
+          <a class="promo-link" href="index.html">Бесплатно</a>
         </div>
 
         <div class="slides-section ">
@@ -86,7 +86,7 @@
             <h3 class="slides-title">Дрели</h3>
             <p class="slides-content">Соседям на радость!</p>
           </div>
-          <a class="slides-button" href="#">Открыть каталог</a>
+          <a class="slides-button" href="catalog.html">Открыть каталог</a>
           <div>
             <a class="prev" onclick="plusSlides(-1)"><img src="img/decorative/shape_2.svg" alt="вперед" width="21" height="39"></a>
             <a class="next" onclick="plusSlides(1)"><img src="img/decorative/shape_1.svg" alt="назад" width="21" height="39"></a>
@@ -102,7 +102,7 @@
       <section class="popular-goods">
         <div class="popular-title container">
           <h2>Популярные товары:</h2>
-          <a class="link-btn" href="#">все популярные товары</a>
+          <a class="link-btn" href="catalog.html">все популярные товары</a>
         </div>
         <div class="container popular-goods-list">
           <div class="goods-item">
@@ -153,49 +153,33 @@
       <section class="popular-manufacturer container" >
         <div class="popular-title ">
           <h2>Популярные производители:</h2>
-          <a class="link-btn" href="#">все производители</a>
+          <a class="link-btn" href="index.html">все производители</a>
         </div>
         <div class="manufacturers-logo">
-          <div class="popular-manufacturer-item">
-            <a href="#">
-              <img src="img/bosch.jpg" width="126" height="37" alt="bosch">
-            </a>
-          </div>
-          <div class="popular-manufacturer-item">
-            <a href="#">
-              <img src="img/makita.jpg" width="123" height="40" alt="makita">
-            </a>
-          </div>
-          <div class="popular-manufacturer-item">
-            <a href="#">
-              <img src="img/dewalt.jpg" width="146" height="44" alt="dewalt">
-            </a>
-          </div>
-          <div class="popular-manufacturer-item">
-            <a href="#">
-              <img src="img/interskol.jpg" width="200" height="75" alt="interskol">
-            </a>
-          </div>
-          <div class="popular-manufacturer-item">
-            <a href="#">
-              <img src="img/hitachi.jpg" width="169" height="31" alt="hitachi">
-            </a>
-          </div>
-          <div class="popular-manufacturer-item">
-            <a href="#">
-               <img src="img/lg.jpg" width="121" height="73" alt="lg">
-            </a>
-          </div>
-          <div class="popular-manufacturer-item">
-            <a href="#">
-              <img src="img/aeg.jpg" width="151" height="96" alt="aeg">
-            </a>
-          </div>
-          <div class="popular-manufacturer-item">
-            <a href="#">
-              <img src="img/Metabo.jpg" width="204" height="69" alt="metabo">
-            </a>
-          </div>
+          <a class="popular-manufacturer-item" href="https://www.bosch.com/">
+            <img src="img/bosch.jpg" width="126" height="37" alt="bosch">
+          </a>
+          <a class="popular-manufacturer-item" href="https://www.makitatools.com/">
+            <img src="img/makita.jpg" width="123" height="40" alt="makita">
+          </a>
+          <a class="popular-manufacturer-item" href="https://www.dewalt.com/">
+            <img src="img/dewalt.jpg" width="146" height="44" alt="dewalt">
+          </a>
+          <a class="popular-manufacturer-item" href="https://www.interskol.ru/">
+            <img src="img/interskol.jpg" width="200" height="75" alt="interskol">
+          </a>
+          <a class="popular-manufacturer-item" href="https://www.hitachi.com/">
+            <img src="img/hitachi.jpg" width="169" height="31" alt="hitachi">
+          </a>
+          <a class="popular-manufacturer-item" href="https://www.lg.com/">
+              <img src="img/lg.jpg" width="121" height="73" alt="lg">
+          </a>
+          <a class="popular-manufacturer-item" href="https://www.aeg.com/">
+            <img src="img/aeg.jpg" width="151" height="96" alt="aeg">
+          </a>
+          <a class="popular-manufacturer-item" href="https://www.metabo.com/">
+            <img src="img/Metabo.jpg" width="204" height="69" alt="metabo">
+          </a>
         </div>
       </section>
 
@@ -206,7 +190,6 @@
           <p class="content services-content">Хороший интернет-магазин отличается от плохого не только ценами!
           <br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
             
-        
           <div class="services-title">
             <button class="tablinks" onclick="servisTitle(event, 'delivery')" autofocus>Доставка</button>
             <button class="tablinks" onclick="servisTitle(event, 'warranty')">Гарантия</button>
@@ -250,7 +233,7 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a class="link-btn about-us-btn" href="#">Подробнее о компании</a>
+          <a class="link-btn about-us-btn" href="index.html">Подробнее о компании</a>
         </section>
 
         <!--Contacts-->
@@ -271,20 +254,20 @@
         <div class="container footer-top-block">
           <img src="img/logo.svg" width="220" height="68" alt="logo">
           <ul class="footer-nav">
-            <li><a href="#">Компания</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Каталог</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="index.html">Компания</a></li>
+            <li><a href="index.html">Новости</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="index.html">Доставка</a></li>
+            <li><a href="index.html">Контакты</a></li>
           </ul>
           <div class="footer-promo">
             <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 
              <br> +7 (812) 555-05-55</p>
             <ul class="footer-promo-nav">
-              <li><a href="#">Материалы</a></li>
-              <li><a href="#">Техника</a></li>
-              <li><a href="#">Инструмент</a></li>
-              <li><a href="#">Спецпредложения</a></li>
+              <li><a href="catalog.html">Материалы</a></li>
+              <li><a href="catalog.html">Техника</a></li>
+              <li><a href="catalog.html">Инструмент</a></li>
+              <li><a href="catalog.html">Спецпредложения</a></li>
             </ul>
           </div>
         </div>
@@ -294,9 +277,9 @@
           <p class="copyright">© 2010–2019 Компания «Техномарт»
           Все права защищены</p>
           <div class="social-list">
-            <a class="vk" href="#">vk</a>
-            <a class="facebook" href="#">fb</a>
-            <a class="instagram" href="#">ing</a>
+            <a class="vk" href="https://vk.com/">vk</a>
+            <a class="facebook" href="https://www.facebook.com/">fb</a>
+            <a class="instagram" href="https://www.instagram.com/">ing</a>
           </div>
           <div class="feedback">
             <p>Обратная связь:</p>
@@ -304,7 +287,7 @@
           </div>
           <div>
             <p>Разработано —</p>
-            <a class="footer-bottom-link" href="#">htmlacademy.ru</a>
+            <a class="footer-bottom-link" href="https://htmlacademy.ru/">htmlacademy.ru</a>
           </div>
         </div>
       </div>
@@ -313,11 +296,11 @@
       <form class="massage-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="modal-top container-modal">
           <p class="massage-item">
-            <label class="modal-description" for="name">Ваше имя:</label>
+            <label class="modal-description" >Ваше имя:</label>
             <input class="massage-name" id="massage-name" type="text" name="name" placeholder="Имя Фамилия">
           </p>
           <p class="massage-item">
-            <label class="modal-description" for="email">Ваш e-mail:</label>
+            <label class="modal-description" >Ваш e-mail:</label>
             <input class="email-user" id="email" type="email" name="email" placeholder="email@example.com">
           </p>
         </div>
